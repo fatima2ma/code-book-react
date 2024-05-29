@@ -1,0 +1,30 @@
+.accordionBtn{
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordionBtn .accordionShow,
+.accordionBtn .accordionHide{
+    grid-row: 1;
+    grid-column: 1;
+    transition: all .4s ease-in-out;
+}
+
+.accordionBtn .accordionShow{
+    transform: scale(1);    
+}
+
+.accordionBtn .accordionHide{
+    transform: scaleX(0);
+    margin-top: -9px;
+}
+
+.accordionBtn.active .accordionShow{
+    transform: scale(0);
+}
+
+.accordionBtn.active .accordionHide{
+    transform: scaleX(1);
+}
