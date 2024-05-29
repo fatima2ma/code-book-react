@@ -28,7 +28,7 @@ function ProductsPage(){
             }
         }
         fetchData();
-    },[searchTerm]); //eslint-disable-line
+    },[searchTerm]);
 
     return(
         <div className="relative">
